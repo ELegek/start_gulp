@@ -1,8 +1,32 @@
 // Основные цвета ======================
-$title: #363838;
-$default: #5A5A5A;
-// Шрифт по умолчанию =======================
-$fontFamily: 'Roboto';
+
+:root {
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+}
+
+
+// Шрифт по умолчанию ---------------------------
+$fontFamily: 'gilroy';
+$fontSize: 16;
+
+// Переменные -------------------------
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1270;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #3a3a3a;
+$orangeColor: #e89f71;
+$grayColor: #898989;
+$darkGrayColor: #616161;
+
+
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

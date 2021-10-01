@@ -1,19 +1,23 @@
-@mixin font($font_name, $file_name, $weight, $style) {
-	@font-face {
-		font-family: $font_name;
-		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
-		url("../fonts/#{$file_name}.woff") format("woff");
-		font-weight: #{$weight};
-		font-style: #{$style};
-	}
-}
+// Подключаем шрифты из googlefonts ---------------------------------
+// &display=swap&subset=cyrillic-ext
 
+// Миксины -------------------------------------
+@import "mixins";
+
+// Подключение шрифтов -------------------------
 @import "fonts";
+// Подключение иконочного шрифта ---------------
+@import 'icons';
+
+// Подключение переменных -----------------------
 @import 'vars';
+// Обнуление и общие параметры ------------------
 @import 'reset';
-@import 'libs';
 @import 'global';
+// Подключение сторонних библиотек -------------- 
+@import 'libs';
+
+// 
 
 
 
@@ -57,7 +61,7 @@
 
 
 
-// Modules
+// Подключение модулей ----------------------------
 @import 'modules/menu';
 @import 'modules/popup';
 @import 'modules/tabs';
